@@ -45,3 +45,20 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+.jshintrc
+target/
+activemq
+.classpath
+.project
+.settings/
+*.iml
+.idea
+.mymetadata
+.metadata
+*.log
+PLTLOG
+admin1
+activemq-data
+logs
+work
