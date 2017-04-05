@@ -1,4 +1,4 @@
-package com.rabbitmqdemo;
+package com.rabbitmq;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
