@@ -19,6 +19,11 @@ public class Main {
             producer.sendMessage(message);
             System.out.println("Message Number "+ i +" sent.");
         }
+
+        Thread.sleep(5000);
+
+        consumer.close();
+        producer.close();
     }
 
     /**
