@@ -6,7 +6,7 @@ import com.rabbitmq.client.ConnectionFactory;
 
 import java.io.IOException;
 
-public abstract class EndPoint{
+public abstract class EndPoint {
 
     protected Channel channel;
     protected Connection connection;
@@ -35,9 +35,10 @@ public abstract class EndPoint{
 
     /**
      * 关闭channel和connection。并非必须，因为隐含是自动调用的。
+     *
      * @throws IOException
      */
-    public void close() throws Exception{
+    public void close() throws Exception {
         this.channel.close();
         this.connection.close();
     }
