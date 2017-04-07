@@ -18,9 +18,9 @@ public class Send {
         Channel channel = connection.createChannel();
 
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        String messgage = "Hello World!";
-        channel.basicPublish("", QUEUE_NAME, null, messgage.getBytes());
-        System.out.println(" [x] Sent '" + messgage + "'");
+        String message = "Hello World!";
+        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+        System.out.println(" [x] Sent '" + message + "'");
 
         channel.close();
         connection.close();
